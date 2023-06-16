@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: none;
+    outline:none;
+    list-style: none;
+}
+
+
+:root {
+    --activityadministration: #5d63f6;
+    --activityassessment: #eb66a2;
+    --activitycollaboration: #f7634d;
+    --activitycommunication: #11a676;
+    --activitycontent: #399be2;
+    --activityinterface: #a378ff;
+}
+:root {
+    --blue: #0f6cbf;
+    --indigo: #6610f2;
+    --purple: #613d7c;
+    --pink: #e83e8c;
+    --red: #ca3120;
+    --orange: #f0ad4e;
+    --yellow: #ff7518;
+    --green: #357a32;
+    --teal: #20c997;
+    --cyan: #008196;
+    --white: #fff;
+    --gray: #6a737b;
+    --gray-dark: #343a40;
+    --primary: #0f6cbf;
+    --secondary: #ced4da;
+    --success: #357a32;
+    --info: #008196;
+    --warning: #f0ad4e;
+    --danger: #ca3120;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+html, body {
+    color: #333;
+    font-family: Montserrat,sans-serif;
+    font-size: 95%;
+    font-weight: 400!important;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--gray-dark);
+}
+.header_container{
+    height:150px;
+    width:100%;
+    background: var(--indigo);
+}
+i{
+    color:white;
+    align-items: center;
+    text-align: center;
+}
+a{
+    cursor:pointer;
+}
+.sub_menu{
+    display: none
+}
+.header1 li:hover ul{
+    position:absolute;
+    right:2rem;
+    display: block;
+}
+.header1 li:hover ul{
+    border:thin solid var(--light);
+    background: #eee;
+}
+.header1 li:hover ul li{
+    color:black;
+    display: block;
+    padding:0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+.header1 li:hover ul li:hover{
+    background: var(--red);
+
+}
+.header1 li{
+    display: inline-block;
+}
+.header1{
+    float:right;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    line-height: 1.5rem;
+}
+.header_word{
+    display: flex;
+    gap:1rem;
+}
+.header_word{
+    padding-top:1.5rem;
+}
+hr{
+    width:100%;
+}
+.anchor_text{
+    color:#eee;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#search{
+    float:right;
+    position: relative;
+    bottom: 2rem;
+    right:2rem;
+    border:thin solid var(--light);
+    width:1rem;
+}
+img{
+    width:100%;
+    height:2rem;
+    object-fit: cover;
+}
+.form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:20vh;
+    margin:8rem;
+}
+.form_wrapper{
+    position:absolute;
+    background: var(--secondary);
+    height:400px;
+    width:300px;
+    margin-bottom:-1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    height:30vh;
+    margin:2rem;
+}
+input{
+    padding:1rem;
+    height:3rem;
+    width:15rem;
+}
+input:hover{
+    border:thick solid rgba(0, 132, 255, 0.682);
+}
+button{
+    align-items: center;
+    justify-content: center;
+    height:3rem;
+    width:15rem;
+    border-radius: 5px;
+    border-color: #0f6cbf;
+    background: blue;
+    color:#eee;
+    cursor: pointer;
+}
+button:hover{
+    transition: 0.5 ease;
+    background: #0f6cbf;
+}
+hr.light_horizontal{
+    display:flex;
+    width:250px;
+    margin:auto;
+}
+hr.vertical-line {
+    border: none;
+    border-left: 2px solid #eee;
+    height: 30px;
+}
+select{
+    background: none;
+    border:none;
+}
+.wrap_en_cookies{
+    display:flex;
+    gap:1rem;
+}
+.cookies_box{
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background:var(--dark);
+    color:#eee;
+    cursor: pointer;
+   
+}
+.cookies_box:hover{
+    background: #11a676;;
+}
+.help{
+    position:relative;
+    bottom:-3rem;
+    display:flex;
+    max-width: 700px;
+    margin:auto;
+    height:2.5rem;
+    width:100%;
+    background: white;    
+}
+.help span a{
+    color:blue;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:1rem;
+    grid-template-rows: minmax(330px,auto);
+    background:rgba(0, 72, 255, 0.42);
+    margin-top:5rem;
+}
+
+
+.grid h1,p{
+    margin:1rem;
+    color:white;
+}
+.black_horizontal{
+    color:#eee;
+    width:100%;
+    margin-bottom:1rem;
+
+}
+.fab{
+    font-size: 2rem;
+    margin:0.5rem;
+}
+
+.span_padding{
+    padding:2rem;
+    padding-top:2rem;
+    color:#eee;
+}
+.float_mobile{
+    float:right;
+    color:#eee;
+    position: relative;
+    right:22rem;
+}
+
+  
+  
+  
+@media(max-width:300px){
+    .grid{
+        display: none;
+    }
+    .black_horizontal{
+        display: none;
+    }
+    .span_padding,.float_mobile{
+        display: none;
+    }
+    .help{
+        position:relative;
+        bottom:-1rem;
+        display:flex;
+        max-width: 200px;
+        margin:auto;
+        height:2rem;
+        width:100%;
+        background: white;    
+    }
+}
+
+@media(max-width:500px){
+    .grid{
+        display: none;
+    }
+    .black_horizontal{
+        display: none;
+    }
+    .span_padding,.float_mobile{
+        display: none;
+    }
+    .help{
+        position:relative;
+        bottom:3rem;
+        display:flex;
+        max-width: 350px;
+        margin:auto;
+        height:2rem;
+        width:100%;
+        background: white;    
+    }
+}
+
+@media(max-width:1000px){
+    .grid{
+        display: none;
+    }
+    .black_horizontal{
+        display: none;
+    }
+    .span_padding,.float_mobile{
+        display: none;
+    }
+    .help{
+        position:relative;
+        bottom:-2rem;
+        display:flex;
+        max-width: 500px;
+        margin:auto;
+        height:2.2rem;
+        width:100%;
+        background: white;    
+    }
+}

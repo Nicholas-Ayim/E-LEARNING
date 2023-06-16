@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: none;
+    outline:none;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root {
+    --activityadministration: #5d63f6;
+    --activityassessment: #eb66a2;
+    --activitycollaboration: #f7634d;
+    --activitycommunication: #11a676;
+    --activitycontent: #399be2;
+    --activityinterface: #a378ff;
+}
+:root {
+    --blue: #0f6cbf;
+    --indigo: #6610f2;
+    --purple: #613d7c;
+    --pink: #e83e8c;
+    --red: #ca3120;
+    --orange: #f0ad4e;
+    --yellow: #ff7518;
+    --green: #357a32;
+    --teal: #20c997;
+    --cyan: #008196;
+    --white: #fff;
+    --gray: #6a737b;
+    --gray-dark: #343a40;
+    --primary: #0f6cbf;
+    --secondary: #ced4da;
+    --success: #357a32;
+    --info: #008196;
+    --warning: #f0ad4e;
+    --danger: #ca3120;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+html, body {
+    color: #333;
+    font-family: Montserrat,sans-serif;
+    font-size: 95%;
+    font-weight: 400!important;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+body {
+   /*  */
+   background: #eee;
+}
+.header_container,.navigation{
+    display: none;
+}
+.header_container{
+    position: relative;
+    bottom:2rem;
+    height:150px;
+    width:100%;
+    background: var(--indigo);
+}
+
+i{
+    color:white;
+    align-items: center;
+    text-align: center;
+}
+a{
+    cursor:pointer;
+}
+.sub_menu{
+    display: none;
+}
+.header1 li:hover ul{
+    position:absolute;
+    right:2rem;
+    display: block;
+}
+.header1 li:hover ul{
+    border:thin solid var(--light);
+    background: #eee;
+}
+.header1 li:hover ul li{
+    color:black;
+    display: block;
+    padding:0.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+.header1 li:hover ul li:hover{
+    background: var(--red);
+
+}
+.header1 li{
+    display: inline-block;
+    color:#eee;
+}
+.header1{
+    float:right;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    line-height: 1.5rem;
+}
+.header_word{
+    display: flex;
+    gap:1rem;
+}
+.header_word{
+    padding-top:1.5rem;
+}
+li.round_name{
+    background: white;
+    border-radius: 50%;
+    padding:0.5rem;
+    color:black;
+}
+select{
+    background: none;
+    border:none;
+    color:black;
+    cursor:pointer;
+}
+select option.a{
+    cursor: pointer;
+}
+
+.header1 li select i:hover{
+    background: blue;
+}
+.header2{
+    margin-left:3rem;
+}
+
+hr{
+    width:100%;
+}
+.anchor_text{
+    color:#eee;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#search{
+    float:right;
+    position: relative;
+    bottom: 2rem;
+    right:2rem;
+    border:thin solid var(--light);
+    width:1rem;
+}
+img{
+    width:100%;
+    height:2rem;
+    object-fit: cover;
+}
+.sub_menu1{
+    display: none;
+}
+.navigation{
+    background: white;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap:0.7rem;
+    margin-left:4rem;
+    height: 3rem;
+    line-height: 3rem;
+}
+.navigation ul li a{
+    padding:1rem;
+}
+
+.navigation ul li:hover{
+    position: relative;
+    background:var(--activitycontent);
+    transition: 1s ease;
+    cursor:pointer;
+}
+
+.navigation ul li ul.drop_menu{
+    display:none;
+}
+
+.navigation ul li:hover ul.drop_menu{
+    margin-bottom:1.5rem;
+     position: absolute;
+     left:-3rem;
+     display: block;
+     background:#eee;
+     height:fit-content;
+     width:15rem;
+}
+.navigation ul li:hover ul.drop_menu li{
+    display: block;
+
+}
+
+.navigation ul li:hover ul.drop_menu li a{
+    color:black;
+
+}
+hr{
+    border:2px solid #eee;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+.horizontal_line{
+    border:2px solid blue;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+.annoucement{
+    margin-left:3rem;
+    margin-right:3rem;
+    margin-top:1rem;
+    display: grid;
+    grid-template-columns: 200px 2fr;
+    height:3rem;
+    background:#eee;
+}
+#announce_box{
+    line-height: 3rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    background: var(--gray-dark);
+    color:white;
+    font-family: monospace;
+}
+#words{
+    line-height: 3rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+    background:rgba(128, 128, 128, 0.928);
+    color:white
+}
+@keyframes wordChange {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+  
+  #words{
+    animation: wordChange 4s infinite;
+  }
+.nav{
+    margin-bottom:5rem;
+    display: none;
+}
+#image_size{
+    width:100%;
+    height:10rem;
+    object-fit: contain;
+    font-size: 3rem;
+}
+  .loader{
+    display: flex;
+    height:70vh;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
+  .loader h1{
+    font-size: 2rem;
+    font-family: monospace;
+    color:#eee;
+  
+  }
+  #reloadwords{
+    font-size:2rem;
+    color:#6610f2;
+
+  }
+  .reload_icon{
+    border:15px solid #45474b;
+    border-top-color: #399be2;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+  }
+  @keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+  }
